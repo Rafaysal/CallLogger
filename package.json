@@ -9,8 +9,7 @@
   "license": "",
   "private": false,
   "scripts": {
-    /*"start": "webpack-dev-server --mode development --open",*/
-    "start": "node app.js",
+    "start": "webpack-dev-server --mode development --open",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
