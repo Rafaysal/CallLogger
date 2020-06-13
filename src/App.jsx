@@ -156,7 +156,7 @@ class App extends Component {
     //Ensures the data is loaded before returning and potentially running in to errors
     let isLoaded = this.state.isLoaded;
     if (!isLoaded) {
-      return <div>Loading data...</div>
+      return <div>Loading data..</div>
     }
 
     //Sorting the data by created date
