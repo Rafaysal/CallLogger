@@ -1,0 +1,231 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#app .container {
+  width: 376px;
+  height: 666px;
+  z-index: 100;
+  background: #F8F8F8;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+}
+
+#app .container-view {
+  padding: 0px 20px 0px 20px;
+  
+}
+
+
+#app .caller-container{
+  list-style: none;
+  background: white;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(128,128,128,0.3);
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s filter;
+}
+#app .caller-container:hover{
+  filter: drop-shadow(1px 1px 2px gray);
+}
+
+
+#app .date{
+  text-align: center;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: gray;
+  font-size: 12px;
+  opacity: 0.6;
+  
+}
+
+#app .call-outbound{
+  height: 25px;
+  filter: invert(40%) grayscale(100%) brightness(65%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+  -webkit-filter: invert(40%) grayscale(100%) brightness(65%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+
+}
+
+#app .call-inbound{
+  height: 25px;
+  filter: invert(30%) grayscale(100%) brightness(95%) sepia(100%) hue-rotate(80deg) saturate(400%) contrast(2);
+  -webkit-filter: invert(30%) grayscale(100%) brightness(95%) sepia(100%) hue-rotate(80deg) saturate(400%) contrast(2);
+}
+
+#app .caller-name{
+  margin-left: 15px;
+}
+
+#app .call-subtext{
+ 
+  font-size: 12px;
+  color: gray;
+  opacity: 0.6;
+  margin-top: 3px;
+  font-weight: bold
+}
+
+#app .time{
+  margin-left: 110px;
+  font-size: 12px;
+  color: gray;
+  opacity: 0.6;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+#app .options{
+  display: flex;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+#app .teal{
+  border-bottom: 3px solid teal;
+  padding-bottom: 2px;
+  
+}
+
+#app #archived,#inbox{
+  cursor: pointer;
+}
+
+#app .call-type{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#app .call-info{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#app .info-type{
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
+
+#app .info-val{
+  font-weight: bold;
+  color: gray;
+  
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
+
+#app .date-info{
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: grey;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#app .buttons-holder{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#app .back{
+    background: rgb(28, 184, 65);
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: background 0.5s, border-radius 0.5s;
+    font-weight: bold;
+  
+}
+
+#app .back:hover{
+  background: black;
+  border-radius: 20px;
+  border: 3px solid white;
+  box-shadow: 0 5px #666;
+}
+
+#app .archive{
+    background: white;
+    border-radius: 4px;
+    border: 3px solid black;
+    color: black;
+    outline: none;
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: background 0.5s, border-radius 0.5s, color 0.5s;
+    font-weight: bold;
+   
+}
+
+#app .archive:hover{
+  color: white;
+  border: 3px solid white;
+  background: black;
+  border-radius: 20px;
+  box-shadow: 0 5px #666;
+}
+
+#app .archive:active {
+  transform: translateY(3px);
+  
+}
+
+#app #reset{
+    visibility: hidden;
+  margin: 10px 0px 0px 240px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    background: white;
+    border-radius: 4px;
+    transition: 0.5s background,color;
+    cursor: pointer;
+}
+
+#app .reset:hover{
+  background: black;
+  color: white;
+}
